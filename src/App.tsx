@@ -320,7 +320,58 @@ function App(){
 
 </section>
 
+
+<section id="Contacto" className="contact-section">
+
+  <div className="contact-content">
+    <span className="section-number">04</span>
+
+    <h2>
+
+      ¿Tienes una idea?
+      <br />
+      <span>Hablemos.</span>
+    </h2>
+
+    <p>
+      Estoy abierto a colaborar en nuevos proyectos, desarrollar
+      nuevas ideas y conocer nuevas oportunidades.
+    </p>
+
+    <div className="contact-buttons">
+      <a
+      href="mailto:alexd9990@outlook.com"
+      className="primary-button"
+      >
+        Enviar correo
+      </a>
+
+      <a
+      href="https://github.com/thkalexthk-lab"
+      target="blank"
+      rel="noreferrer"
+      className="secondary-button"
+      >
+        GitHub ↗
+      </a>
+    </div>
+  </div>
+</section>
+
         </main>  
+
+        <footer className="footer">
+          <div className="footer-logo">
+            <span>JZ</span>
+            <p>Jesus Zayas</p>
+          </div>
+          <p>
+            Desarrolladorcon React + TypeScript
+          </p>
+          <p>
+            © 2026
+          </p>
+        </footer>
     </div>
           
   )
