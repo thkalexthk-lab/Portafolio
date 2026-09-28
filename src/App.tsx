@@ -26,29 +26,37 @@ import {
 function App(){
   return(
     <div className="Portafolio">
-      <header className="navbar">
-        <div className="logo">
-          <span>JZ</span>
-          <p>Jesus Alejandro Zayas Guerra</p>
+      <header className="navbar-wrapper">
+        <div className="navbar">
+          <a href="#inicio" className="logo">
+            <span>JZ</span>
+            <p>Jesus Zayas</p>
+          </a>
+
+          <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+
+          <a
+          className="github-button"
+          href="https://github.com/thkalexthk-lab"
+          target="_blank"
+          rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
+
         </div>
-        <nav>
-          <a href="#inicio">Inicio</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#tecnologia">Tecnologia</a>
-          <a href="#experiencia">Experiencia</a>
-        </nav>
-        <a
-        className="github-button"
-        href="#"
-        >
-          Github
-        </a>
       </header>
 
 
       <main>
 
-        <section id="Inicio" className="hero">
+        <section id="inicio" className="hero">
           <div className="hero-content">
             <span className="hero-label">
               DESARROLLADOR DE SOFTWARE
@@ -371,7 +379,7 @@ function App(){
 </section>
 
 
-<section id="Contacto" className="contact-section">
+<section id="contacto" className="contact-section">
 
   <div className="contact-content">
     <span className="section-number">04</span>

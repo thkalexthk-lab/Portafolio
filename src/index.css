@@ -34,3 +34,7 @@ a{
 button{
   font: inherit;
 }
+
+section {
+  scroll-margin-top: 90px;
+}
