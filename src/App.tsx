@@ -1,6 +1,27 @@
 import "./App.css"
 import personaje from "./assets/personaje.png"
 
+import runshadowImg from "./assets/projects/runshadow.png"
+import hossImg from "./assets/projects/hoss.png"
+import portafolioImg from "./assets/projects/portafolio.png"
+
+
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaPython,
+  FaGitAlt,
+  FaLinux,
+} from "react-icons/fa"
+
+import {
+  SiTypescript,
+  SiFastapi,
+  SiLua,
+} from "react-icons/si"
+
 
 function App(){
   return(
@@ -84,7 +105,10 @@ function App(){
     <article className="project-card">
 
       <div className="project-image">
-        <span>RUNSHADOW</span>
+        <img
+        src={runshadowImg}
+        alt="Captura de proyecto RunShadow"
+        />
       </div>
 
       <div className="project-content">
@@ -93,7 +117,7 @@ function App(){
 
         <p>
           Videojuego 2D desarrollado utilizando Lua
-          y LÖVE2D.
+          y LÖVE2D en curso.
         </p>
 
         <div className="project-footer">
@@ -104,7 +128,12 @@ function App(){
             <span>Videojuegos</span>
           </div>
 
-          <a href="#" aria-label="Ver proyecto RunShadow">
+          <a 
+          href="https://github.com/thkalexthk-lab/runshadow"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Ver RunShadow en GitHUb" 
+          >
             ↗
           </a>
 
@@ -118,7 +147,10 @@ function App(){
     <article className="project-card">
 
       <div className="project-image">
-        <span>HOSS</span>
+        <img
+        src={hossImg}
+        alt="Captura de proyecto Hoss"
+        />
       </div>
 
       <div className="project-content">
@@ -138,8 +170,14 @@ function App(){
             <span>Web</span>
           </div>
 
-          <a href="#" aria-label="Ver proyecto HOSS">
-            
+          <a 
+          
+          href="https://github.com/sistemashoss-bit/KnowledgeBaseHoss"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Ver proyecto Hoss" 
+          >
+            ↗
           </a>
 
         </div>
@@ -152,7 +190,10 @@ function App(){
     <article className="project-card">
 
       <div className="project-image">
-        <span>PORTAFOLIO</span>
+        <img
+        src={portafolioImg}
+        alt="Captura de mi portafolio"
+        />
       </div>
 
       <div className="project-content">
@@ -172,8 +213,15 @@ function App(){
             <span>Vite</span>
           </div>
 
-          <a href="#" aria-label="Ver proyecto Portafolio">
-            
+          <a 
+          
+          href="https://github.com/thkalexthk-lab/Portafolio"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Ver proyecto portafolio"
+          
+          >
+            ↗
           </a>
 
         </div>
@@ -201,54 +249,56 @@ function App(){
   <div className="technologies-grid">
 
     <div className="technology-card">
-      <span className="technology-icon">HTML</span>
+      <FaHtml5 className="technology-logo" />
       <p>HTML</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">CSS</span>
+      <FaCss3Alt className="technology-logo" />
       <p>CSS</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">JS</span>
+     <FaJs className="technology-logo" />
       <p>JavaScript</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">TS</span>
+      <SiTypescript className="technology-logo" />
       <p>TypeScript</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">⚛</span>
+      <FaReact className="technology-logo" />
       <p>React</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">PY</span>
+      <FaPython className="technology-logo" />
       <p>Python</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">API</span>
+      <SiFastapi className="technology-logo" />
       <p>FastAPI</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">Lua</span>
+      <SiLua className="technology-logo" />
       <p>Lua</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">Git</span>
+      <FaGitAlt className="technology-logo" />
       <p>Git</p>
     </div>
 
     <div className="technology-card">
-      <span className="technology-icon">Linux</span>
+      <FaLinux className="technology-logo" />
       <p>Linux</p>
     </div>
+
+
 
   </div>
 
