@@ -254,6 +254,71 @@ function App(){
 
 </section>
 
+<section id="experiencia" className="experience-section">
+
+  <div className="section-header">
+    <div>
+      <span className="section-number">03</span>
+      <h2>Experiencia</h2>
+    </div>
+
+    <p>Mi trayectoria y experiencia en desarrollo.</p>
+  </div>
+
+  <div className="experience-timeline">
+
+    <article className="experience-item">
+
+      <div className="experience-dot"></div>
+
+      <div className="experience-date">
+        2026 — Actualidad
+      </div>
+
+      <div className="experience-content">
+
+        <h3>Desarrollador de Software</h3>
+
+        <span>Proyectos personales</span>
+
+        <p>
+          Desarrollo de aplicaciones web, APIs y proyectos
+          de software utilizando tecnologías como React,
+          TypeScript, Python y Git.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article className="experience-item">
+
+      <div className="experience-dot"></div>
+
+      <div className="experience-date">
+        2026
+      </div>
+
+      <div className="experience-content">
+
+        <h3>Desarrollo de videojuegos</h3>
+
+        <span>RunShadow</span>
+
+        <p>
+          Desarrollo de un videojuego 2D utilizando Lua y
+          LÖVE2D, trabajando con animaciones, escenarios,
+          sprites y mecánicas de juego.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
 
         </main>  
     </div>
