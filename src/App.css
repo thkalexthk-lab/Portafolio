@@ -3,9 +3,30 @@
 }
 .portfolio {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 75% 25%, rgba(95, 75, 255, 0.08), transparent 30%),
-    #080a0f;
+  position: relative;
+
+  background: 
+  linear-gradient(
+    rgba(255, 255, 255, 0.018) 1px,
+    transparent 1px
+  ),
+  linear-gradient(
+    90dg
+    rgba(255, 255, 255, 0.018) 1px
+    transparent1px
+  ),
+  radial-gradient(
+    circle at 75% 20%,
+    rgba(95, 75, 255, 0.01),
+    transparent 30%
+  ),
+  #080a0f;
+
+  background-size: 
+  50px 50px,
+  50px 50px,
+  auto,
+  auto;
 }
 
 .navbar-wrapper {
@@ -316,6 +337,15 @@
   transform: scale(1.05);
 }
 
+.menu-button {
+  display: none;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .project-image img {
     transition: none;
@@ -607,7 +637,44 @@
 @media (max-width: 900px) {
 
 
-  .contact-section {
+.menu-button{
+ display: block;
+ z-index: 1001;
+}
+
+.navbar .github-button {
+  display: none;
+}
+
+.nav-menu{
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 15px 25px 25px;
+  background: rgba(8, 10, 15, 0.97);
+  border-bottom: 1px solid #20232d;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: 0.25s ease;
+}
+
+.nav-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-menu a {
+  width: 100%;
+  padding: 15px, 0;
+  border-bottom: 1px solid #181b23;
+}
+
+.contact-section {
   padding: 100px 25px;
 }
 
@@ -674,10 +741,6 @@
 
   .navbar {
     padding: 0 25px;
-  }
-
-  .navbar nav {
-    display: none;
   }
 
   .hero {

@@ -1,10 +1,12 @@
 import "./App.css"
+import { motion } from "motion/react"
 import personaje from "./assets/personaje.png"
 
 import runshadowImg from "./assets/projects/runshadow.png"
 import hossImg from "./assets/projects/hoss.png"
 import portafolioImg from "./assets/projects/portafolio.png"
 
+import {userState, useState} from "react"
 
 import {
   FaHtml5,
@@ -24,6 +26,8 @@ import {
 
 
 function App(){
+
+  const [menuOpen, setMenuOpen] = useState(false)
   return(
     <div className="Portafolio">
       <header className="navbar-wrapper">
@@ -33,13 +37,32 @@ function App(){
             <p>Jesus Zayas</p>
           </a>
 
-          <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#contacto">Contacto</a>
+          <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
+            <a href="#inicio" onClick={() => setMenuOpen(false)}>
+              Inicio
+            </a>
+             <a href="#proyectos" onClick={() => setMenuOpen(false)}>
+              Proyectos
+            </a>
+             <a href="#tecnologias" onClick={() => setMenuOpen(false)}>
+              Tencnologias
+            </a>
+             <a href="#experiencia" onClick={() => setMenuOpen(false)}>
+              Experiencia
+            </a>
+             <a href="#contacto" onClick={() => setMenuOpen(false)}>
+              Contacto
+            </a>
           </nav>
+
+
+          <button
+          className="menu-button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Abrir menu"
+          >
+            {menuOpen ? "✕" : "☰"}
+          </button>
 
           <a
           className="github-button"
@@ -95,7 +118,20 @@ function App(){
           </div>
         </section>
 
-        <section id="proyectos" className="projects-section">
+        <motion.section
+        id="proyectos"
+        className="projects-section"
+         initial={{ opacity: 0, y: 50}}
+         whileInView={{ opacity: 1, y: 0}}
+         viewport={{
+          once: true,
+          amount: 0.15
+         }}
+         transition={{
+          duration: 0.6,
+          ease: "easeOut"
+         }}
+        >
 
   <div className="section-header">
     <div>
@@ -240,10 +276,23 @@ function App(){
 
   </div>
 
-        </section>
+        </motion.section>
 
 
-        <section id="tecnologias" className="technologies-section">
+        <motion.section
+        id="tecnologias"
+        className="technologies-section"
+         initial={{ opacity: 0, y: 50}}
+         whileInView={{ opacity: 1, y: 0}}
+         viewport={{
+          once: true,
+          amount: 0.15
+         }}
+         transition={{
+          duration: 0.6,
+          ease: "easeOut"
+         }}
+        >
 
   <div className="section-header">
     <div>
@@ -310,9 +359,22 @@ function App(){
 
   </div>
 
-</section>
+</motion.section>
 
-<section id="experiencia" className="experience-section">
+<motion.section
+        id="experiencia"
+        className="experience-section"
+         initial={{ opacity: 0, y: 50}}
+         whileInView={{ opacity: 1, y: 0}}
+         viewport={{
+          once: true,
+          amount: 0.15
+         }}
+         transition={{
+          duration: 0.6,
+          ease: "easeOut"
+         }}
+        >
 
   <div className="section-header">
     <div>
@@ -376,10 +438,23 @@ function App(){
 
   </div>
 
-</section>
+</motion.section>
 
 
-<section id="contacto" className="contact-section">
+<motion.section
+        id="contacto"
+        className="contact-section"
+         initial={{ opacity: 0, y: 50}}
+         whileInView={{ opacity: 1, y: 0}}
+         viewport={{
+          once: true,
+          amount: 0.15
+         }}
+         transition={{
+          duration: 0.6,
+          ease: "easeOut"
+         }}
+        >
 
   <div className="contact-content">
     <span className="section-number">04</span>
@@ -414,7 +489,7 @@ function App(){
       </a>
     </div>
   </div>
-</section>
+</motion.section>
 
         </main>  
 
